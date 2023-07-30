@@ -40,6 +40,7 @@ Citizen.CreateThread(function()
                                 elseif Config.Language == "en" then
                                     exports['okokNotify']:Alert("VOITURE", "You don't have the right job to use this car", 5000, 'error')
                                 end
+                            end
                         end
                     end
                 end
@@ -48,6 +49,7 @@ Citizen.CreateThread(function()
         Citizen.Wait(Config.CheckTime)
     end
 end)
+
 
 function getListeJobs()
     local playerJob = ESX.PlayerData.job.name

@@ -1,5 +1,7 @@
 🚀 CARJOB - Gérez vos Voitures d'Entreprise avec Style!🚗💨
 
+https://forum.cfx.re/uploads/default/original/4X/3/3/0/330f1cdf8c7600d892607c5f494d96b4c2a833e6.jpeg
+
 👋 Bienvenue dans le monde de CARJOB, un script super fun et pratique pour FiveM qui vous permet de gérer les voitures d'entreprise ! 🎉
 
 Je cherchais un script permettant de bloquer l'acces a certaines voiture en fonction des métier, mais j'ai fini par en créer un.
@@ -45,6 +47,8 @@ https://drive.google.com/file/d/1CxWXtK7fm2Q67f2dTrKzJ6X74xxE21gC/view?usp=drive
  📢 Assistance et Support :
 
  Si vous avez des questions, des suggestions ou des problèmes, n'hésitez pas !
+
+ https://forum.cfx.re/t/carjob-gerez-vos-voitures-dentreprise-avec-style/5152492
 
 🌟 Contribuez et Améliorez CARJOB :
 

@@ -40,7 +40,7 @@ Citizen.CreateThread(function()
                             if Config.Language == "fr" then
                                 exports['okokNotify']:Alert("VOITURE", "Vous n'avez pas le bon métier pour utiliser cette voiture", 5000, 'error')
                             elseif Config.Language == "en" then
-                                exports['okokNotify']:Alert("VOITURE", "You don't have the right job to use this car", 5000, 'error')
+                                exports['okokNotify']:Alert("CAR", "You don't have the right job to use this car", 5000, 'error')
                             end
                         end
                     end

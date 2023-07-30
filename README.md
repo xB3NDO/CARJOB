@@ -2,7 +2,7 @@
 
 ![CARJOB|690x388](upload://7hGJg4wiMRpax9C1Amg6ith7MuG.jpeg)
 
-> :flag_gb: ENGLISH VERSION 
+:flag_gb: ENGLISH VERSION 
 
 👋 Welcome! Here's a handy script that allows you to manage company cars! 🎉
 
@@ -63,8 +63,7 @@ CARJOB is an open-source project, and we welcome contributions from the FiveM co
 So, what are you waiting for? Download CARJOB now and bring a new level of enjoyment and management to your FiveM server's company vehicles! 🚀🚗💨
 
 
-
->  :flag_fr: VERSION FRANCAISE
+:flag_fr: VERSION FRANCAISE
 
 
 👋 Bienvenue ! Voici un cript pratique qui vous permet de gérer les voitures d'entreprise ! 🎉
@@ -127,11 +126,7 @@ Alors, qu'attendez-vous ? Téléchargez CARJOB dès maintenant et offrez à votr
 
 
 
- > 📥 Download / Téléchargement  :
-[CARJOB ](https://github.com/xB3NDO/CARJOB)
-
-
-> PATCH NOTE 🛠️ : 
-
->  -  V.0.2 :
+PATCH NOTE 🛠️ : 
+-  V.0.2 :
+  
 -Translation in English / French -> Config.lua

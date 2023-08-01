@@ -1,5 +1,13 @@
 🚀 CARJOB - Vehicle JOB permission🚗💨
 
+PATCH NOTE V.0.3🛠️ :
+
+Config :
+
+- Language : EN OR FR
+- OKOKNotify or ESXDefaultNotify 
+- Old ESX or New ESX
+
 ![image](https://github.com/xB3NDO/CARJOB/assets/140925178/02c7b046-a565-4c83-aeaa-081987979ce6)
 
 

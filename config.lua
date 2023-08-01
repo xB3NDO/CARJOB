@@ -1,5 +1,7 @@
 Config = {}
 
+Config.UseOldEsx = true
+
 Config.ListeJobs = {
     police = {
         label = "Police",

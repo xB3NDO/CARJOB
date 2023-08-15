@@ -1,9 +1,9 @@
 🚀 CARJOB - Vehicle JOB permission🚗💨
 
-PATCH NOTE V.0.3🛠️ :
+PATCH NOTE V.1.0🛠️ :
 
 Config :
-
+- Passager autorisés / Passenger allowed
 - Language : EN OR FR
 - OKOKNotify or ESXDefaultNotify 
 - Old ESX or New ESX

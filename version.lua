@@ -3,8 +3,9 @@ local githubLink = "https://github.com/xB3NDO/CARJOB"
 
 print("  //\n  ||    " .. resourceName .. " est créé par B3NDO\n  ||")
 
-print("  ||    Version actuelle : ^2V.0.3^0")
-print("  ||    Patch Note : - Traduction / Translation ")
+print("  ||    Version actuelle : ^2V.1.0^0")
+print("  ||    Patch Note : - Passager autorisés / Passenger allowed ")
+print("  ||               : - Traduction / Translation ")
 print("  ||               : - OKOKNotify / ESXDefaultNotify ")
 print("  ||               : - Old ESX / New ESX ")
 

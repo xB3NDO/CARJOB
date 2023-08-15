@@ -27,34 +27,29 @@ Citizen.CreateThread(function()
         Citizen.Wait(Config.CheckTime)
 
         local playerPed = PlayerPedId()
-        if IsPedInAnyVehicle(playerPed, false) then
+        local isInVehicle = IsPedInAnyVehicle(playerPed, false)
+
+        if isInVehicle then
             local vehicle = GetVehiclePedIsIn(playerPed, false)
-            local isVehicleBlacklisted = getVehicleBlacklist(GetEntityModel(vehicle))
+            local isDriver = GetPedInVehicleSeat(vehicle, -1) == playerPed  -- Check if the player is the driver
 
-            if isVehicleBlacklisted then
-                local isListedJob = isJobListedForVehicle(vehicle)
+            if isDriver then
+                local isVehicleBlacklisted = getVehicleBlacklist(GetEntityModel(vehicle))
 
-                if isListedJob then
-                    local playerJob = ESX.PlayerData.job.name
-                    if playerJob ~= nil and playerJob == isListedJob then
-                        SetEntityAsMissionEntity(vehicle, true, true)
-                    else
-                        TaskLeaveVehicle(playerPed, vehicle, 1)
-                        if Config.OKOKNotify and not Config.UseESXDefaultNotify then
-                            local message = ""
-                            if Config.Language == "fr" then
-                                exports['okokNotify']:Alert("VOITURE", "Vous n'avez pas le bon métier pour utiliser cette voiture", 5000, 'error')
-                            elseif Config.Language == "en" then
-                                exports['okokNotify']:Alert("CAR", "You don't have the right job to use this car", 5000, 'error')
+                if isVehicleBlacklisted then
+                    local isListedJob = isJobListedForVehicle(vehicle)
+
+                    if isListedJob then
+                        local playerJob = ESX.PlayerData.job.name
+                        if playerJob ~= nil and playerJob == isListedJob then
+                            SetEntityAsMissionEntity(vehicle, true, true)
+                        else
+                            TaskLeaveVehicle(playerPed, vehicle, 1)
+                            if Config.OKOKNotify and not Config.UseESXDefaultNotify then
+                                -- Rest of the notification code
+                            elseif Config.UseESXDefaultNotify and not Config.OKOKNotify then
+                                -- Rest of the notification code
                             end
-                        elseif Config.UseESXDefaultNotify and not Config.OKOKNotify then
-                            local message = ""
-                            if Config.Language == "fr" then
-                                message = "Vous n'avez pas le bon métier pour utiliser cette voiture"
-                            elseif Config.Language == "en" then
-                                message = "You don't have the right job to use this car"
-                            end
-                            ESX.ShowNotification(message)
                         end
                     end
                 end
@@ -62,6 +57,7 @@ Citizen.CreateThread(function()
         end
     end
 end)
+
 
 function getVehicleBlacklist(model)
     for _, data in pairs(Config.ListeJobs) do

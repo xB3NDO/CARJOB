@@ -4,7 +4,7 @@ game 'gta5'
 name 'CARJOB'
 author 'B3NDO'
 description 'Un script pour remplacer les clés des voitures d\'entreprise, autorise les jobs à utiliser leurs voitures associées.'
-version 'V.0.3'
+version 'V.1.0'
 url 'https://github.com/xB3NDO'
 
 server_script {
